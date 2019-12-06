@@ -26,10 +26,10 @@ def proof_of_work(last_proof):
 
     print("Searching for next proof")
     print(f'Last Proof: {last_proof}')
-    proof = 432
+    proof = 435000
     #  TODO: Your code here
     while valid_proof(last_hash, proof) is False:
-        proof += random.randint(0, 100)
+        proof += random.randint(0, 232)
 
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
